@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $.each(words, function(index, value) {
-    $('.container').append('<div style="background: #' + value + '">' + value + '</div>');
+    $('.container').append('<div class="hex-box" style="background: #' + value +
+    '">#' + value + '</div>');
   });
 });
