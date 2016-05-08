@@ -1,17 +1,59 @@
-.container {
+header {
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.9em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
+  padding: 30px;
+  margin: 92px auto 0 auto;
+  font-size: 1.1em;
 }
 
 .hex-box {
-  flex: 1;
+  flex-shrink: 1;
   flex-basis: 200px;
+  max-width: 250px;
   height: 200px;
+  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  padding: 0 30px 30px 30px;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

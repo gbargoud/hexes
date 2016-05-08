@@ -15,6 +15,6 @@ $(document).ready(function() {
         .html(word)
         .css('background-color', color.toHexString())
         .css('color', color.darken(50).toHexString())
-        .appendTo($(".container"))
+        .appendTo($("section"))
   });
 });
