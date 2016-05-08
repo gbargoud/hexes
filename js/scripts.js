@@ -1,6 +1,20 @@
 $(document).ready(function() {
-  $.each(words, function(index, value) {
-    $('.container').append('<div class="hex-box" style="background: #' + value +
-    '">#' + value + '</div>');
+
+  words.sort(function(a,b) {
+    colorA = tinycolor("#" + a);
+    colorB = tinycolor("#" + b);
+
+    return colorB.getBrightness() - colorA.getBrightness();
+  });
+
+  $.each(words, function(index, word) {
+    color = tinycolor("#" + word);
+
+    d = document.createElement('div');
+    $(d).addClass('hex-box')
+        .html(word)
+        .css('background-color', color.toHexString())
+        .css('color', color.darken(50).toHexString())
+        .appendTo($(".container"))
   });
 });
