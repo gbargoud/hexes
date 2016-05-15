@@ -21,8 +21,8 @@ h6 {
 section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 30px;
+  justify-content: center;
+  padding: 30px 25px;
   margin: 92px auto 0 auto;
   font-size: 1.1em;
 }
@@ -34,10 +34,15 @@ section {
   height: 200px;
   margin: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+}
+
+p {
+  display: none;
 }
 
 footer {

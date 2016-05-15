@@ -12,9 +12,17 @@ $(document).ready(function() {
 
     d = document.createElement('div');
     $(d).addClass('hex-box')
-        .html(word)
+        .html('<h3>' + word + '</h3><p>' + color.toRgbString() + '</p>')
         .css('background-color', color.toHexString())
         .css('color', color.darken(50).toHexString())
         .appendTo($("section"))
+  });
+
+  $('.hex-box').on('mouseenter', function() {
+    $(this).find('p').slideDown()
+  });
+
+  $('.hex-box').on('mouseout', function() {
+    $(this).find('p').slideUp();
   });
 });
