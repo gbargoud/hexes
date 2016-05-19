@@ -54,6 +54,10 @@ footer {
   font-size: 1em;
 }
 
+footer p {
+  display: inline;
+}
+
 a {
   color: #444;
   text-decoration: none;
